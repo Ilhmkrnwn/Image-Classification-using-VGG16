@@ -3,8 +3,8 @@
 ### Overview Aplikasi
 Aplikasi ini merupakan sistem klasifikasi gambar sederhana yang dapat mengenali apakah gambar tersebut merupakan "Rock" (batu), "Paper" (kertas), atau "Scissor" (gunting). Aplikasi ini memanfaatkan model deep learning VGG-16 untuk melakukan klasifikasi dengan tingkat akurasi yang tinggi.
 
-![Example](/static/img1.png)
-![Example2](/static/img2.png)
+![Example](/static/contoh1.png)
+![Example2](/static/contoh2.png)
 
 ### Penggunaan Aplikasi
 
