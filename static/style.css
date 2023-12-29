@@ -1,0 +1,135 @@
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #304088;
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-section {
+        padding-top: 50px;
+    }
+
+    .container {
+        max-width: 800px;
+        max-height: 700px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .title-box {
+        margin-bottom: 30px;
+    }
+
+    .sec-title {
+        font-size: 24px;
+        font-weight: 800;
+        color: #ffffff;
+        margin: 0;
+        justify-content: center;
+    }
+
+    form {
+        width: 100%;
+        margin: auto;
+        padding: 15px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .column {
+        flex: 1;
+    }
+
+    select {
+        width: 100%;
+        padding: 8px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+        color: #333;
+        font-size: 16px;
+    }
+
+    #image-background {
+        width: auto;
+        margin-top: 20px
+    }
+
+    #image-preview {
+        width: 35%;
+        margin-top: 20px;
+    }
+
+    .input100 {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #666666;
+        color: #ffffff;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .container-login100-form-btn {
+        margin-top: 20px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .login100-form-btn {
+        width: 50%;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #007bff;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .login100-form {
+        background-color: #8d8d8dd7;
+    }
+
+    .login100-form-btn:hover {
+        background-color: #0056b3;
+    }
+
+    .styled-select {
+        width: 200px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        /* Adjust font size */
+        /* Add more styles as needed */
+    }
+
+    #image-preview {
+        width: 100%;
+        /* Menggunakan lebar 100% */
+        text-align: center;
+        /* Pusatkan elemen teks */
+        margin-top: 20px;
+    }
+
+    .image-preview img {
+        max-width: 100%;
+        max-height: 100%;
+        display: inline-block;
+        /* Tambahkan display: inline-block untuk mengatur ulang posisi */
+    }
