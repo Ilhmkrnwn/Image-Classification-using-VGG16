@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/style.css">
+  <title>Image Prediction</title>
+</head>
+
+<body>
+  <section class="contact-section" id="predict1">
+    <div class="container">
+      <div class="title-box centred">
+        <div class="sec-title">Image Classification</div>
+        <div class="sec-title">Paper, Rock, and Scissors</div>
+        <img id="image-background" alt="Image preview" src="/static/background.jpeg" />
+      </div>
+      <form class="login100-form" action="/predict" method="post" enctype="multipart/form-data">
+        <div id="image-preview" class="image-preview"></div>
+        <div class="container-login100-form-btn">
+          <div class="wrap-input100 validate-input" data-validate="Image file is required" id="input">
+            <input class="input100" id="image-source" name="file" onchange="previewImage();" type="file"
+              alt="Input Image" accept="image/jpeg,image/jpg,image/png">
+          </div>
+        </div>
+        <div class="container-login100-form-btn">
+          <button class="login100-form-btn" type="submit">Predict</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    function previewImage() {
+      var input = document.getElementById('image-source'); // Ganti 'image-input' dengan 'image-source'
+      var preview = document.getElementById('image-preview');
+
+      while (preview.firstChild) {
+        preview.removeChild(preview.firstChild);
+      }
+
+      if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+          var image = document.createElement('img');
+          image.src = e.target.result;
+          image.style.maxWidth = '100%';
+          image.style.maxHeight = '100%';
+          preview.appendChild(image);
+          preview.classList.add('centered-image');
+
+        }
+
+        reader.readAsDataURL(input.files[0]);
+      }
+    }
+  </script>
+</body>
+
+</html>
